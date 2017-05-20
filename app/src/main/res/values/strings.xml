@@ -16,6 +16,7 @@
     <string name="worm">Worm</string>
 
     <!-- QUESTIONS -->
+    <string name="please_select_the">Please select the</string>
     <string name="highly_developed_predators">highly developed predators</string>
     <string name="highly_developed_herbivores">highly developed herbivores</string>
     <string name="horned">horned animals</string>
@@ -26,8 +27,8 @@
     <string name="flying">flying creature</string>
     <string name="jewelry">jewelry creature</string>
     <string name="riding">riding animal</string>
-    <string name="the_biggest">the biggest</string>
-    <string name="the_smallest">the_smallest</string>
+    <string name="the_biggest">biggest creature</string>
+    <string name="the_smallest">smallest creature</string>
 
     <!-- STAGES -->
     <string name="stage_1">1</string>
@@ -42,5 +43,7 @@
     <string name="option_C">C</string>
     <string name="option_D">D</string>
 
+    <!-- BUTTONS -->
     <string name="restart">Restart</string>
+    <string name="submit">Submit</string>
 </resources>
