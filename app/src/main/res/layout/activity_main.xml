@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.quiz.android.animalsquiz.MainActivity">
 
+    <!-- STAGES -->
     <LinearLayout
         android:id="@+id/quiz_stages"
         android:layout_width="wrap_content"
@@ -44,16 +45,123 @@
 
     </LinearLayout>
 
+    <!-- QUESTION -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        tools:ignore="RelativeOverlap">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/please_select_the" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/highly_developed_herbivores" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout style="@style/OptionLayout">
+
+            <TextView
+                    style="@style/OptionTitle"
+                    android:text="@string/option_A" />
+
+                <ImageView
+                    android:id="@+id/option_A_image"
+                    style="@style/OptionImage"
+                    android:src="@drawable/bee" />
+
+                <TextView
+                    android:id="@+id/option_A_text"
+                    style="@style/OptionText"
+                    android:text="@string/bee" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/OptionTitle"
+                    android:text="@string/option_B" />
+
+                <ImageView
+                    android:id="@+id/option_B_image"
+                    style="@style/OptionImage"
+                    android:src="@drawable/cow" />
+
+                <TextView
+                    android:id="@+id/option_B_text"
+                    style="@style/OptionText"
+                    android:text="@string/cow" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/OptionTitle"
+                    android:text="@string/option_C" />
+
+                <ImageView
+                    android:id="@+id/option_C_image"
+                    style="@style/OptionImage"
+                    android:src="@drawable/porcupine" />
+
+                <TextView
+                    android:id="@+id/option_C_text"
+                    style="@style/OptionText"
+                    android:text="@string/porcupine" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/OptionLayout">
+
+                <TextView
+                    style="@style/OptionTitle"
+                    android:text="@string/option_D" />
+
+                <ImageView
+                    android:id="@+id/option_D_image"
+                    style="@style/OptionImage"
+                    android:src="@drawable/hedgehog" />
+
+                <TextView
+                    android:id="@+id/option_D_text"
+                    style="@style/OptionText"
+                    android:text="@string/hedgehog" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- ANSWER -->
+
+    <!-- BUTTONS -->
     <TextView
         android:id="@+id/restart"
         android:text="@string/restart"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_margin="@dimen/margin_default"
-        android:background="?attr/selectableItemBackground"
-        android:padding="@dimen/padding_default"
+        style="@style/Button"
         tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/submit"
+        android:text="@string/submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        style="@style/Button"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
 
 </RelativeLayout>

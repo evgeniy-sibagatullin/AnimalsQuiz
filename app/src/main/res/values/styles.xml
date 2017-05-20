@@ -6,7 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:textSize">@dimen/text_size_default</item>
+        <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
     <style name="QuizStage">
@@ -15,8 +16,42 @@
         <item name="android:layout_margin">@dimen/margin_small</item>
         <item name="android:background">@color/colorNeutral</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">@dimen/font_size_large</item>
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/text_size_big</item>
+    </style>
+
+    <style name="Option">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="OptionLayout" parent="Option">
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="OptionTitle" parent="Option">
+        <item name="android:padding">@dimen/padding_small</item>
+    </style>
+
+    <style name="OptionImage" parent="Option">
+        <item name="android:layout_height">@dimen/option_image_size</item>
+        <item name="android:layout_width">@dimen/option_image_size</item>
+    </style>
+
+    <style name="OptionText" parent="Option">>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:padding">@dimen/padding_small</item>
+    </style>
+
+
+    <style name="Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin_default</item>
+        <item name="android:padding">@dimen/padding_default</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 
 </resources>
