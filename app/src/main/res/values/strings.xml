@@ -28,4 +28,19 @@
     <string name="riding">riding animal</string>
     <string name="the_biggest">the biggest</string>
     <string name="the_smallest">the_smallest</string>
+
+    <!-- STAGES -->
+    <string name="stage_1">1</string>
+    <string name="stage_2">2</string>
+    <string name="stage_3">3</string>
+    <string name="stage_4">4</string>
+    <string name="stage_5">5</string>
+
+    <!-- OPTIONS -->
+    <string name="option_A">A</string>
+    <string name="option_B">B</string>
+    <string name="option_C">C</string>
+    <string name="option_D">D</string>
+
+    <string name="restart">Restart</string>
 </resources>

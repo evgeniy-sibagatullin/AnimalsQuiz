@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="font_size_default">20sp</dimen>
+    <dimen name="font_size_large">24sp</dimen>
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_default">8dp</dimen>
+
+    <dimen name="padding_default">8dp</dimen>
+
+    <dimen name="quiz_stage_size">32dp</dimen>
+</resources>

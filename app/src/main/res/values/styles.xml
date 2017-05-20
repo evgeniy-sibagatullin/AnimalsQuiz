@@ -6,6 +6,17 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/font_size_default</item>
+    </style>
+
+    <style name="QuizStage">
+        <item name="android:layout_height">@dimen/quiz_stage_size</item>
+        <item name="android:layout_width">@dimen/quiz_stage_size</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+        <item name="android:background">@color/colorNeutral</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="android:textColor">@color/colorPrimary</item>
     </style>
 
 </resources>
