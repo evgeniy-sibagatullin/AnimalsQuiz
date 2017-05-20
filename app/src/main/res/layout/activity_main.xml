@@ -20,7 +20,6 @@
         <TextView
             android:id="@+id/quiz_stage_1"
             style="@style/QuizStage"
-            android:background="@color/colorAccent"
             android:text="@string/stage_1" />
 
         <TextView
@@ -45,6 +44,7 @@
 
     </LinearLayout>
 
+
     <!-- QUESTION -->
     <LinearLayout
         android:layout_width="wrap_content"
@@ -58,13 +58,12 @@
             android:id="@+id/question_title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/please_enter_the_animal_title" />
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/question_optional_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/highly_developed_herbivores"
             android:visibility="gone" />
 
         <LinearLayout
@@ -83,13 +82,11 @@
 
                 <ImageView
                     android:id="@+id/option_A_image"
-                    style="@style/OptionImage"
-                    android:src="@drawable/bee" />
+                    style="@style/OptionImage" />
 
                 <TextView
                     android:id="@+id/option_A_text"
                     style="@style/OptionText"
-                    android:text="@string/bee"
                     android:visibility="gone" />
 
             </LinearLayout>
@@ -105,13 +102,11 @@
 
                 <ImageView
                     android:id="@+id/option_B_image"
-                    style="@style/OptionImage"
-                    android:src="@drawable/cow" />
+                    style="@style/OptionImage" />
 
                 <TextView
                     android:id="@+id/option_B_text"
-                    style="@style/OptionText"
-                    android:text="@string/cow" />
+                    style="@style/OptionText" />
 
             </LinearLayout>
 
@@ -126,13 +121,11 @@
 
                 <ImageView
                     android:id="@+id/option_C_image"
-                    style="@style/OptionImage"
-                    android:src="@drawable/porcupine" />
+                    style="@style/OptionImage" />
 
                 <TextView
                     android:id="@+id/option_C_text"
-                    style="@style/OptionText"
-                    android:text="@string/porcupine" />
+                    style="@style/OptionText" />
 
             </LinearLayout>
 
@@ -147,13 +140,11 @@
 
                 <ImageView
                     android:id="@+id/option_D_image"
-                    style="@style/OptionImage"
-                    android:src="@drawable/hedgehog" />
+                    style="@style/OptionImage" />
 
                 <TextView
                     android:id="@+id/option_D_text"
-                    style="@style/OptionText"
-                    android:text="@string/hedgehog" />
+                    style="@style/OptionText" />
 
             </LinearLayout>
 
@@ -161,6 +152,7 @@
 
 
     </LinearLayout>
+
 
     <!-- ANSWER SINGLE -->
     <RadioGroup
@@ -189,7 +181,6 @@
             android:text="@string/option_D" />
 
     </RadioGroup>
-
 
     <!-- ANSWER MULTIPLE -->
     <LinearLayout
@@ -220,16 +211,18 @@
     </LinearLayout>
 
     <!-- ANSWER EDIT TEXT -->
-
     <EditText
         style="@style/AnswerGroup"
-        android:hint="@string/animal_the_great" />
+        android:hint="@string/animal_the_great"
+        android:visibility="gone" />
+
 
     <!-- BUTTONS -->
     <TextView
         android:id="@+id/restart"
         style="@style/Button"
         android:layout_alignParentTop="true"
+        android:onClick="executeRestart"
         android:text="@string/restart"
         tools:ignore="RelativeOverlap" />
 
@@ -238,6 +231,7 @@
         style="@style/Button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:onClick="executeSubmit"
         android:text="@string/submit"
         tools:ignore="RelativeOverlap,RtlHardcoded" />
 
