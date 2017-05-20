@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Animals Quiz</string>
+
+    <!-- ANIMALS -->
+    <string name="wolf">Wolf</string>
+    <string name="fox">Fox</string>
+    <string name="jaguar">Jaguar</string>
+    <string name="goat">Goat</string>
+    <string name="cow">Cow</string>
+    <string name="horse">Horse</string>
+    <string name="hedgehog">Hedgehog</string>
+    <string name="porcupine">Porcupine</string>
+    <string name="seashell">Seashell</string>
+    <string name="whale">Whale</string>
+    <string name="bee">Bee</string>
+    <string name="worm">Worm</string>
+
+    <!-- QUESTIONS -->
+    <string name="highly_developed_predators">highly developed predators</string>
+    <string name="highly_developed_herbivores">highly developed herbivores</string>
+    <string name="horned">horned animals</string>
+    <string name="prickly">prickly animals</string>
+    <string name="sea">sea creatures</string>
+    <string name="insects">insects</string>
+    <string name="feline">feline animal</string>
+    <string name="flying">flying creature</string>
+    <string name="jewelry">jewelry creature</string>
+    <string name="riding">riding animal</string>
+    <string name="the_biggest">the biggest</string>
+    <string name="the_smallest">the_smallest</string>
 </resources>
