@@ -11,37 +11,37 @@
         android:id="@+id/quiz_stages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="@dimen/margin_default"
-        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin_default"
+        android:orientation="horizontal"
         tools:ignore="RtlHardcoded">
 
         <TextView
             android:id="@+id/quiz_stage_1"
-            android:text="@string/stage_1"
             style="@style/QuizStage"
-            android:background="@color/colorAccent" />
+            android:background="@color/colorAccent"
+            android:text="@string/stage_1" />
 
         <TextView
             android:id="@+id/quiz_stage_2"
-            android:text="@string/stage_2"
-            style="@style/QuizStage" />
+            style="@style/QuizStage"
+            android:text="@string/stage_2" />
 
         <TextView
             android:id="@+id/quiz_stage_3"
-            android:text="@string/stage_3"
-            style="@style/QuizStage" />
+            style="@style/QuizStage"
+            android:text="@string/stage_3" />
 
         <TextView
             android:id="@+id/quiz_stage_4"
-            android:text="@string/stage_4"
-            style="@style/QuizStage" />
+            style="@style/QuizStage"
+            android:text="@string/stage_4" />
 
         <TextView
             android:id="@+id/quiz_stage_5"
-            android:text="@string/stage_5"
-            style="@style/QuizStage" />
+            style="@style/QuizStage"
+            android:text="@string/stage_5" />
 
     </LinearLayout>
 
@@ -49,9 +49,9 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_centerInParent="true"
         android:gravity="center"
+        android:orientation="vertical"
         tools:ignore="RelativeOverlap">
 
         <TextView
@@ -71,7 +71,7 @@
 
             <LinearLayout style="@style/OptionLayout">
 
-            <TextView
+                <TextView
                     style="@style/OptionTitle"
                     android:text="@string/option_A" />
 
@@ -146,22 +146,47 @@
 
     </LinearLayout>
 
-    <!-- ANSWER -->
+    <!-- ANSWER SINGLE -->
+    <RadioGroup
+        android:id="@+id/answer_radio_group"
+        style="@style/AnswerRadioGroup">
+
+        <RadioButton
+            android:id="@+id/answer_radio_A"
+            style="@style/AnswerRadioButton"
+            android:text="@string/option_A" />
+
+        <RadioButton
+            android:id="@+id/answer_radio_B"
+            style="@style/AnswerRadioButton"
+            android:text="@string/option_B" />
+
+        <RadioButton
+            android:id="@+id/answer_radio_C"
+            style="@style/AnswerRadioButton"
+            android:text="@string/option_C" />
+
+        <RadioButton
+            android:id="@+id/answer_radio_D"
+            style="@style/AnswerRadioButton"
+            android:text="@string/option_D" />
+
+    </RadioGroup>
 
     <!-- BUTTONS -->
     <TextView
         android:id="@+id/restart"
-        android:text="@string/restart"
-        android:layout_alignParentTop="true"
         style="@style/Button"
+        android:layout_alignParentTop="true"
+        android:text="@string/restart"
         tools:ignore="RelativeOverlap" />
 
     <TextView
         android:id="@+id/submit"
-        android:text="@string/submit"
+        style="@style/Button"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        style="@style/Button"
+        android:text="@string/submit"
         tools:ignore="RelativeOverlap,RtlHardcoded" />
 
 </RelativeLayout>
