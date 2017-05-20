@@ -78,7 +78,8 @@
 
                 <TextView
                     style="@style/OptionTitle"
-                    android:text="@string/option_A" />
+                    android:text="@string/option_A"
+                    android:visibility="gone" />
 
                 <ImageView
                     android:id="@+id/option_A_image"
