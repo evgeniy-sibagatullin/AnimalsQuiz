@@ -55,21 +55,26 @@
         tools:ignore="RelativeOverlap">
 
         <TextView
+            android:id="@+id/question_title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/please_select_the" />
+            android:text="@string/please_enter_the_animal_title" />
 
         <TextView
+            android:id="@+id/question_optional_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/highly_developed_herbivores" />
+            android:text="@string/highly_developed_herbivores"
+            android:visibility="gone" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <LinearLayout style="@style/OptionLayout">
+            <LinearLayout
+                android:id="@+id/option_A_layout"
+                style="@style/OptionLayout">
 
                 <TextView
                     style="@style/OptionTitle"
@@ -83,11 +88,15 @@
                 <TextView
                     android:id="@+id/option_A_text"
                     style="@style/OptionText"
-                    android:text="@string/bee" />
+                    android:text="@string/bee"
+                    android:visibility="gone" />
 
             </LinearLayout>
 
-            <LinearLayout style="@style/OptionLayout">
+            <LinearLayout
+                android:id="@+id/option_B_layout"
+                style="@style/OptionLayout"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/OptionTitle"
@@ -105,7 +114,10 @@
 
             </LinearLayout>
 
-            <LinearLayout style="@style/OptionLayout">
+            <LinearLayout
+                android:id="@+id/option_C_layout"
+                style="@style/OptionLayout"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/OptionTitle"
@@ -123,7 +135,10 @@
 
             </LinearLayout>
 
-            <LinearLayout style="@style/OptionLayout">
+            <LinearLayout
+                android:id="@+id/option_D_layout"
+                style="@style/OptionLayout"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/OptionTitle"
@@ -149,7 +164,8 @@
     <!-- ANSWER SINGLE -->
     <RadioGroup
         android:id="@+id/answer_radio_group"
-        style="@style/AnswerGroup">
+        style="@style/AnswerGroup"
+        android:visibility="gone">
 
         <RadioButton
             android:id="@+id/answer_radio_A"
@@ -177,7 +193,8 @@
     <!-- ANSWER MULTIPLE -->
     <LinearLayout
         android:id="@+id/answer_checkbox_group"
-        style="@style/AnswerGroup">
+        style="@style/AnswerGroup"
+        android:visibility="gone">
 
         <CheckBox
             android:id="@+id/answer_check_A"
@@ -200,6 +217,12 @@
             android:text="@string/option_D" />
 
     </LinearLayout>
+
+    <!-- ANSWER EDIT TEXT -->
+
+    <EditText
+        style="@style/AnswerGroup"
+        android:hint="@string/animal_the_great" />
 
     <!-- BUTTONS -->
     <TextView

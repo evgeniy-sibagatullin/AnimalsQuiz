@@ -17,6 +17,7 @@
 
     <!-- QUESTIONS -->
     <string name="please_select_the">Please select the</string>
+    <string name="please_enter_the_animal_title">Please enter the animal title</string>
     <string name="highly_developed_predators">highly developed predators</string>
     <string name="highly_developed_herbivores">highly developed herbivores</string>
     <string name="horned">horned animals</string>
@@ -46,4 +47,7 @@
     <!-- BUTTONS -->
     <string name="restart">Restart</string>
     <string name="submit">Submit</string>
+
+    <!-- EDIT TEXT DEFAULT -->
+    <string name="animal_the_great">Animal the great!</string>
 </resources>
