@@ -50,4 +50,10 @@
 
     <!-- EDIT TEXT DEFAULT -->
     <string name="animal_the_great">Animal the great!</string>
+
+    <!-- TOAST RESULT -->
+    <string name="quiz_completed">Quiz completed. </string>
+    <string name="result_perfect">Perfect result for now!</string>
+    <string name="result_not_perfect">You could do better. Your result is: </string>
+    <string name="result_sad">Sad, but still all wrong :(</string>
 </resources>
