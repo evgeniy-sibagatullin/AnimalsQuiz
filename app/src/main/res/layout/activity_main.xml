@@ -149,29 +149,57 @@
     <!-- ANSWER SINGLE -->
     <RadioGroup
         android:id="@+id/answer_radio_group"
-        style="@style/AnswerRadioGroup">
+        style="@style/AnswerGroup">
 
         <RadioButton
             android:id="@+id/answer_radio_A"
-            style="@style/AnswerRadioButton"
+            style="@style/AnswerOption"
             android:text="@string/option_A" />
 
         <RadioButton
             android:id="@+id/answer_radio_B"
-            style="@style/AnswerRadioButton"
+            style="@style/AnswerOption"
             android:text="@string/option_B" />
 
         <RadioButton
             android:id="@+id/answer_radio_C"
-            style="@style/AnswerRadioButton"
+            style="@style/AnswerOption"
             android:text="@string/option_C" />
 
         <RadioButton
             android:id="@+id/answer_radio_D"
-            style="@style/AnswerRadioButton"
+            style="@style/AnswerOption"
             android:text="@string/option_D" />
 
     </RadioGroup>
+
+
+    <!-- ANSWER MULTIPLE -->
+    <LinearLayout
+        android:id="@+id/answer_checkbox_group"
+        style="@style/AnswerGroup">
+
+        <CheckBox
+            android:id="@+id/answer_check_A"
+            style="@style/AnswerOption"
+            android:text="@string/option_A" />
+
+        <CheckBox
+            android:id="@+id/answer_check_B"
+            style="@style/AnswerOption"
+            android:text="@string/option_B" />
+
+        <CheckBox
+            android:id="@+id/answer_check_C"
+            style="@style/AnswerOption"
+            android:text="@string/option_C" />
+
+        <CheckBox
+            android:id="@+id/answer_check_D"
+            style="@style/AnswerOption"
+            android:text="@string/option_D" />
+
+    </LinearLayout>
 
     <!-- BUTTONS -->
     <TextView
