@@ -56,4 +56,5 @@
     <string name="result_perfect">Perfect result for now!</string>
     <string name="result_not_perfect">You could do better. Your result is: </string>
     <string name="result_sad">Sad, but still all wrong :(</string>
+    <string name="please_provide_answer">Please provide answer</string>
 </resources>
